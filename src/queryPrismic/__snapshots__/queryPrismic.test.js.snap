@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`linkResolver Fetches Prismic api and makes a content request 1`] = `
+Object {
+  "results": Array [
+    Object {
+      "alternate_languages": Array [],
+      "data": Object {
+        "about": Array [
+          Object {
+            "spans": Array [],
+            "text": "Launching businesses that change the world.",
+            "type": "heading2",
+          },
+          Object {
+            "spans": Array [],
+            "text": "Saturn Five is not a VC firm. We’re a holding company, or a “venture studio.” We don’t just invest in businesses, we are entrepreneurs who actively start, fund, operate, and grow new businesses, often partnering with force-of-nature entrepreneurs to bring their ideas to life.",
+            "type": "paragraph",
+          },
+          Object {
+            "spans": Array [],
+            "text": "We work across a variety of verticals, building companies that aren’t just chasing a quick exit, but are adding genuine value to the world. ",
+            "type": "paragraph",
+          },
+          Object {
+            "spans": Array [
+              Object {
+                "data": Object {
+                  "link_type": "Web",
+                  "url": "https://medium.com/the-weekend-reader/startup-studios-the-new-way-to-build-great-companies-6e55b7fe6412",
+                },
+                "end": 10,
+                "start": 0,
+                "type": "hyperlink",
+              },
+            ],
+            "text": "Learn more",
+            "type": "paragraph",
+          },
+        ],
+        "contact": Array [
+          Object {
+            "spans": Array [],
+            "text": "Contact.",
+            "type": "heading2",
+          },
+          Object {
+            "spans": Array [
+              Object {
+                "end": 100,
+                "start": 78,
+                "type": "strong",
+              },
+            ],
+            "text": "Let’s get in touch. Our individual contacts are above, or you can reach us at contact@saturnfive.com",
+            "type": "paragraph",
+          },
+        ],
+        "description": "Saturn Five is a venture studio that actively starts, funds, and grows new businesses.",
+        "portfolio": Array [
+          Object {
+            "description": Array [
+              Object {
+                "spans": Array [],
+                "text": "Pitchshare is a project to catalog real-world case studies of successful entrepreneurs who have raised capital to help aspiring entreprenurs. In development.",
+                "type": "paragraph",
+              },
+            ],
+            "logo": Object {
+              "alt": null,
+              "copyright": null,
+              "dimensions": Object {
+                "height": 94,
+                "width": 667,
+              },
+              "url": "https://saturnfive.cdn.prismic.io/saturnfive%2F8159fe53-fa88-4719-9011-104ca9d9e357_pitchshare.svg",
+            },
+          },
+          Object {
+            "description": Array [
+              Object {
+                "spans": Array [],
+                "text": "Icon is disrupting the home building market with advanced robotics that can 3D print a home from concrete in 24 hours. Prototype stage.",
+                "type": "paragraph",
+              },
+            ],
+            "logo": Object {
+              "alt": "Icon - 3d printed homes via advanced robotics.",
+              "copyright": null,
+              "dimensions": Object {
+                "height": 146,
+                "width": 282,
+              },
+              "url": "https://saturnfive.cdn.prismic.io/saturnfive%2Faeeda6b7-2fbb-4edf-8977-735604234e73_icon.svg",
+            },
+          },
+          Object {
+            "description": Array [
+              Object {
+                "spans": Array [],
+                "text": "Project Waterbelly is our code name for a new line of eco-friendly home products, starting with a uniqu  rain water collection system. Prototype stage.",
+                "type": "paragraph",
+              },
+            ],
+            "logo": Object {
+              "alt": null,
+              "copyright": null,
+              "dimensions": Object {
+                "height": 147,
+                "width": 654,
+              },
+              "url": "https://saturnfive.cdn.prismic.io/saturnfive%2F365fd46a-3f12-4d68-b3f5-84dd88bec712_waterbelly.svg",
+            },
+          },
+        ],
+        "subtitle": "Saturn Five is a venture studio that actively",
+        "subtitle2": "starts, funds, and grows new businesses.",
+        "team": Array [
+          Object {
+            "bio": Array [
+              Object {
+                "spans": Array [],
+                "text": "Max is the brains behind the operation. Harvard MBA, McKinsey, Bridgewater Consulting Group—Max brings a passion for going deep on ideas and solving hard problems.",
+                "type": "paragraph",
+              },
+            ],
+            "email": "max@saturnfive.com",
+            "name": "Max Anderson",
+            "photo": Object {
+              "alt": "Max Anderson",
+              "copyright": null,
+              "dimensions": Object {
+                "height": 500,
+                "width": 500,
+              },
+              "url": "https://saturnfive.cdn.prismic.io/saturnfive/6429ff0e73964b3dc585c268120ae79c53cb58dd_max-anderson.jpg",
+            },
+          },
+          Object {
+            "bio": Array [
+              Object {
+                "spans": Array [
+                  Object {
+                    "data": Object {
+                      "link_type": "Web",
+                      "url": "https://tree.house",
+                    },
+                    "end": 99,
+                    "start": 90,
+                    "type": "hyperlink",
+                  },
+                ],
+                "text": "Evan is the glue connecting everything we do. NYC investment banker, Kauffman Fellow, and TreeHouse founder—Evan brings people and ideas together to make magic happen.",
+                "type": "paragraph",
+              },
+            ],
+            "email": "evan@saturnfive.com",
+            "name": "Evan Loomis",
+            "photo": Object {
+              "alt": "Evan Loomis",
+              "copyright": null,
+              "dimensions": Object {
+                "height": 500,
+                "width": 500,
+              },
+              "url": "https://saturnfive.cdn.prismic.io/saturnfive/8a87544976df9e10b6844c8834e4aa8017950cff_09bcfc0.jpg",
+            },
+          },
+          Object {
+            "bio": Array [
+              Object {
+                "spans": Array [
+                  Object {
+                    "data": Object {
+                      "link_type": "Web",
+                      "url": "http://www.mystatesman.com/business/austin-based-bazaarvoice-buys-social-media-startup-feedmagnet/zGgWlWwTGldfM1b3Zbh4vK/",
+                    },
+                    "end": 107,
+                    "start": 87,
+                    "type": "hyperlink",
+                  },
+                ],
+                "text": "Jason is the swiss army knife of product development. Designer, coder, strategist, and tech startup founder—Jason brings a hands-on approach to building digital products.",
+                "type": "paragraph",
+              },
+            ],
+            "email": "jason@saturnfive.com",
+            "name": "Jason Ford",
+            "photo": Object {
+              "alt": "Jason Ford",
+              "copyright": null,
+              "dimensions": Object {
+                "height": 500,
+                "width": 500,
+              },
+              "url": "https://saturnfive.cdn.prismic.io/saturnfive/e3e17988237318cc84f25cb98097c13169b771dd_jason-ford.jpg",
+            },
+          },
+        ],
+        "title": "Saturn Five",
+      },
+      "first_publication_date": "2017-09-29T15:49:28+0000",
+      "href": "https://webapp-starter.cdn.prismic.io/api/v2/documents/search?ref=Wc5toCwAACoAfilL&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22Wc5rhSwAACoAfh_z%22%29+%5D%5D",
+      "id": "Wc5rhSwAACoAfh_z",
+      "lang": "en-us",
+      "last_publication_date": "2017-09-29T15:58:24+0000",
+      "linked_documents": Array [
+        Object {
+          "id": "Wc5rhSwAACoAfh_z",
+          "lang": "en-us",
+          "slug": "web-app-starter",
+          "tags": Array [],
+          "type": "site",
+        },
+        Object {
+          "id": "Wc5rhSwAACoAfh_z",
+          "lang": "en-us",
+          "slug": "web-app-starter",
+          "tags": Array [],
+          "type": "site",
+        },
+      ],
+      "slugs": Array [
+        "web-app-starter",
+      ],
+      "tags": Array [],
+      "type": "site",
+      "uid": null,
+    },
+  ],
+}
+`;

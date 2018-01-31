@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ui/RichText Ignores things without valid data. 1`] = `
+<div
+  className="jsx-646358086 jsx-646358086"
+>
+  
+</div>
+`;
+
+exports[`ui/RichText Renders more complex content blocks 1`] = `
+<div
+  className="jsx-646358086 jsx-646358086"
+>
+  <p>
+    This is 
+    <strong>
+      a 
+      <em>
+        test
+      </em>
+    </strong>
+    <em>
+       of the content system
+    </em>
+    , using all the features of 
+    <a
+      href="https://www.prismic.com"
+      target="_blank"
+    >
+      Prismic
+    </a>
+    <span>
+       rich text.
+    </span>
+    <br />
+    <span>
+      This line is not a new paragraph. It should just have a line break before it.
+    </span>
+  </p>
+  <p
+    className="awesome"
+  >
+    This entire line has a label
+  </p>
+  <p>
+    Just this one 
+    <span
+      className="super-hot"
+    >
+      word
+    </span>
+     has a label.
+  </p>
+  <a
+    href="/content/getting-started"
+    onClick={[Function]}
+  >
+    <img
+      src="https://webapp-starter.cdn.prismic.io/webapp-starter/f68a6e7b08a5192cfacf0edc4f12d3f8d51dacf0_desktop.png"
+    />
+  </a>
+  <p>
+    The image above has a link. The one below does not:
+  </p>
+  <img
+    alt="Business card."
+    copyright="Super top secret."
+    src="https://webapp-starter.cdn.prismic.io/webapp-starter/a078e20171f6125a25b37ae80dcfe3e772639142_business-card.png"
+  />
+  <div
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "<iframe width=\\"480\\" height=\\"270\\" src=\\"https://www.youtube.com/embed/ferZnZ0_rSM?feature=oembed\\" frameborder=\\"0\\" allowfullscreen></iframe>",
+      }
+    }
+    data-oembed="https://www.youtube.com/watch?v=ferZnZ0_rSM"
+    data-oembed-provider="YouTube"
+    data-oembed-type="video"
+  />
+</div>
+`;
+
+exports[`ui/RichText Renders null when not passed any data 1`] = `null`;
+
+exports[`ui/RichText Renders simple standard tag content 1`] = `
+<div
+  className="jsx-646358086 jsx-646358086"
+>
+  <h1>
+    This is an h1.
+  </h1>
+  <h2>
+    This is an h2.
+  </h2>
+  <h3>
+    This is an h3.
+  </h3>
+  <h4>
+    This is an h4.
+  </h4>
+  <h5>
+    This is an h5.
+  </h5>
+  <h6>
+    This is an h6.
+  </h6>
+  <p>
+    This is a paragraph
+  </p>
+  <pre>
+    This is a preformatted text
+  </pre>
+  <strong>
+    This is a bold (strong) text
+  </strong>
+  <em>
+    This is a emphasized (em) text
+  </em>
+  <ul>
+    <li>
+      This is an un-ordered list item.
+    </li>
+    <li>
+      This is another un-ordered list item.
+    </li>
+  </ul>
+  <ol>
+    <li>
+      This is an ordered list item.
+    </li>
+    <li>
+      This is another ordered list item.
+    </li>
+  </ol>
+</div>
+`;
+
+exports[`ui/RichText Renders spans 1`] = `
+<div
+  className="jsx-646358086 jsx-646358086"
+>
+  <h1>
+    This is a 
+    <strong>
+      bold
+    </strong>
+     h1.
+  </h1>
+  <h2>
+    This is an paragraph features 
+    <em>
+      emphasized
+    </em>
+     text.
+  </h2>
+</div>
+`;

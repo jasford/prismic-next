@@ -1,0 +1,9 @@
+{
+  "presets": [
+    ["env", { "modules": "commonjs" }],
+    "next/babel"
+  ],
+  "plugins": [
+    "styled-jsx/babel"
+  ]
+}

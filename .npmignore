@@ -1,0 +1,25 @@
+# Application
+/coverage
+/src/
+.babelrc
+.eslintrc.yml
+.gitignore
+.npmignore
+
+# OS and editor files
+.DS_Store
+*.sublime*
+.project
+*~
+.vscode
+
+# Logs
+log/
+*.log
+
+# NPM
+node_modules
+npm-debug.log*
+
+# NYC
+.nyc_output

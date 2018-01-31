@@ -1,0 +1,22 @@
+# Application
+/coverage
+/*.js
+/lib/
+
+# OS and editor files
+.DS_Store
+*.sublime*
+.project
+*~
+.vscode
+
+# Logs
+log/
+*.log
+
+# NPM
+node_modules
+npm-debug.log*
+
+# NYC
+.nyc_output
