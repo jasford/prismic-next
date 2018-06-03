@@ -36,15 +36,17 @@ export async function getPrismic() {
     }, settings.refresh * 1000);
 
     // Get new api object from Prismic, with latest master ref.
-    apiPromise = Prismic.getApi(settings.endpoint);
+    apiPromise = Prismic.getApi(settings.endpoint).catch(() => {
+      stale = true;
+    });
     const newApi = await apiPromise;
     apiPromise = undefined;
 
     // If the master ref has changed update our prismic api object. This will
     // clear the cache and ensure we are serving the latest content.
     const oldRef = api && api.data.refs.find(r => r.isMasterRef).ref;
-    const newRef = newApi.data.refs.find(r => r.isMasterRef).ref;
-    if (oldRef !== newRef) {
+    const newRef = newApi && newApi.data.refs.find(r => r.isMasterRef).ref;
+    if (newRef && oldRef !== newRef) {
       api = newApi;
     }
   }

@@ -101,4 +101,30 @@ describe('linkResolver', () => {
 
     done();
   });
+
+  test('Fetches new Prismic if last one threw error', async (done) => {
+    // Request api the first time, with a bogus endpoint, which will fail.
+    mod.initPrismic({ endpoint: 'https://bogus' });
+    const get1 = mod.getPrismic();
+
+    // Advance timers by one second to ensure we have loaded the api.
+    jest.runTimersToTime(1000);
+
+    // Wait for the first api request to resolve.
+    const api1 = await get1;
+
+    // Request api the second time.
+    mod.initPrismic({ endpoint: 'https://saturnfive.cdn.prismic.io/api/v2' });
+    const get2 = mod.getPrismic();
+
+    // Run all the timers out again to give the new api time to load.
+    jest.runAllTimers();
+    const api2 = await get2;
+
+    // Verify that the api requests have different refs.
+    expect(api1).toBe(undefined);
+    expect(getMasterRef(api2)).toBe('test-starting-ref');
+
+    done();
+  });
 });
