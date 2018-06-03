@@ -1,6 +1,6 @@
 import mockData from './mockData/prismic';
 
-// Stating ref value, and function to enable tests to update the ref,
+// Starting ref value, and function to enable tests to update the ref,
 // simulating a change in content on Prismic while the site is running.
 let ref = 'test-starting-ref';
 export function updateRef(newRef) {
@@ -8,9 +8,13 @@ export function updateRef(newRef) {
 }
 
 export default {
-  getApi: () => new Promise((resolve) => {
+  getApi: endpoint => new Promise((resolve, reject) => {
     const thisRef = ref;
     setTimeout(() => {
+      if (endpoint !== 'https://saturnfive.cdn.prismic.io/api/v2') {
+        reject();
+        return;
+      }
       resolve({
         query: (args) => {
           let predicates = args;
