@@ -1,17 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ui/RichText Ignores things without valid data. 1`] = `
-<div
-  className="jsx-646358086 jsx-646358086"
->
-  
-</div>
-`;
+exports[`ui/RichText Ignores things without valid data. 1`] = `""`;
 
 exports[`ui/RichText Renders more complex content blocks 1`] = `
-<div
-  className="jsx-646358086 jsx-646358086"
->
+Array [
   <p>
     This is 
     <strong>
@@ -37,7 +29,7 @@ exports[`ui/RichText Renders more complex content blocks 1`] = `
     <span>
       This line is not a new paragraph. It should just have a line break before it.
     </span>
-  </p>
+  </p>,
   <p>
     This block has a 
     <a
@@ -47,12 +39,12 @@ exports[`ui/RichText Renders more complex content blocks 1`] = `
       link
     </a>
      with an onClick event handler.
-  </p>
+  </p>,
   <p
     className="awesome"
   >
     This entire line has a label
-  </p>
+  </p>,
   <p>
     Just this one 
     <span
@@ -61,7 +53,7 @@ exports[`ui/RichText Renders more complex content blocks 1`] = `
       word
     </span>
      has a label.
-  </p>
+  </p>,
   <a
     href="/content/getting-started"
     onClick={[Function]}
@@ -69,15 +61,15 @@ exports[`ui/RichText Renders more complex content blocks 1`] = `
     <img
       src="https://webapp-starter.cdn.prismic.io/webapp-starter/f68a6e7b08a5192cfacf0edc4f12d3f8d51dacf0_desktop.png"
     />
-  </a>
+  </a>,
   <p>
     The image above has a link. The one below does not:
-  </p>
+  </p>,
   <img
     alt="Business card."
     copyright="Super top secret."
     src="https://webapp-starter.cdn.prismic.io/webapp-starter/a078e20171f6125a25b37ae80dcfe3e772639142_business-card.png"
-  />
+  />,
   <div
     dangerouslySetInnerHTML={
       Object {
@@ -87,46 +79,44 @@ exports[`ui/RichText Renders more complex content blocks 1`] = `
     data-oembed="https://www.youtube.com/watch?v=ferZnZ0_rSM"
     data-oembed-provider="YouTube"
     data-oembed-type="video"
-  />
-</div>
+  />,
+]
 `;
 
 exports[`ui/RichText Renders null when not passed any data 1`] = `null`;
 
 exports[`ui/RichText Renders simple standard tag content 1`] = `
-<div
-  className="jsx-646358086 jsx-646358086"
->
+Array [
   <h1>
     This is an h1.
-  </h1>
+  </h1>,
   <h2>
     This is an h2.
-  </h2>
+  </h2>,
   <h3>
     This is an h3.
-  </h3>
+  </h3>,
   <h4>
     This is an h4.
-  </h4>
+  </h4>,
   <h5>
     This is an h5.
-  </h5>
+  </h5>,
   <h6>
     This is an h6.
-  </h6>
+  </h6>,
   <p>
     This is a paragraph
-  </p>
+  </p>,
   <pre>
     This is a preformatted text
-  </pre>
+  </pre>,
   <strong>
     This is a bold (strong) text
-  </strong>
+  </strong>,
   <em>
     This is a emphasized (em) text
-  </em>
+  </em>,
   <ul>
     <li>
       This is an un-ordered list item.
@@ -134,7 +124,7 @@ exports[`ui/RichText Renders simple standard tag content 1`] = `
     <li>
       This is another un-ordered list item.
     </li>
-  </ul>
+  </ul>,
   <ol>
     <li>
       This is an ordered list item.
@@ -142,27 +132,25 @@ exports[`ui/RichText Renders simple standard tag content 1`] = `
     <li>
       This is another ordered list item.
     </li>
-  </ol>
-</div>
+  </ol>,
+]
 `;
 
 exports[`ui/RichText Renders spans 1`] = `
-<div
-  className="jsx-646358086 jsx-646358086"
->
+Array [
   <h1>
     This is a 
     <strong>
       bold
     </strong>
      h1.
-  </h1>
+  </h1>,
   <h2>
     This is an paragraph features 
     <em>
       emphasized
     </em>
      text.
-  </h2>
-</div>
+  </h2>,
+]
 `;

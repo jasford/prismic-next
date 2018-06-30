@@ -103,7 +103,7 @@ const RichText = ({ data, linkResolver }) => {
 
   const serialized = PrismicRichText.serialize(data, serialize);
   return (
-    <div>
+    <React.Fragment>
       <style jsx>{`
         div :global(img) {
           max-width: 100%;
@@ -111,7 +111,7 @@ const RichText = ({ data, linkResolver }) => {
       `}
       </style>
       {serialized}
-    </div>
+    </React.Fragment>
   );
 };
 
