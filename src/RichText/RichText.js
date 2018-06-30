@@ -28,11 +28,15 @@ const RichText = ({ data, linkResolver }) => {
   const serializeHyperlink = (element, children) => {
     const link = linkResolver(element.data);
     const p = getProps(element);
-    if (link.href.substr(0, 4) === 'http') {
+    if (link.href && link.href.substr(0, 4) === 'http') {
       return <a href={link.href} target="_blank" {...p}>{children}</a>;
     }
+    const resolved = linkResolver(element.data);
+    if (resolved.onClick) {
+      return <a role="button" {...resolved} {...p}>{children}</a>;
+    }
     return (
-      <Link {...linkResolver(element.data)} {...p}>
+      <Link {...resolved} {...p}>
         <a>{children}</a>
       </Link>
     );
@@ -99,7 +103,7 @@ const RichText = ({ data, linkResolver }) => {
 
   const serialized = PrismicRichText.serialize(data, serialize);
   return (
-    <div>
+    <React.Fragment>
       <style jsx>{`
         div :global(img) {
           max-width: 100%;
@@ -107,7 +111,7 @@ const RichText = ({ data, linkResolver }) => {
       `}
       </style>
       {serialized}
-    </div>
+    </React.Fragment>
   );
 };
 
