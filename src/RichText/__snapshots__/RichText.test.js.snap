@@ -38,6 +38,16 @@ exports[`ui/RichText Renders more complex content blocks 1`] = `
       This line is not a new paragraph. It should just have a line break before it.
     </span>
   </p>
+  <p>
+    This block has a 
+    <a
+      onClick={[Function]}
+      role="button"
+    >
+      link
+    </a>
+     with an onClick event handler.
+  </p>
   <p
     className="awesome"
   >

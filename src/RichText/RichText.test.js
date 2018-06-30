@@ -14,6 +14,9 @@ function linkResolver(data) {
       as: `/content/${data.data.slug}`,
     };
   }
+  if (data.type === 'stub') {
+    return { onClick: () => null };
+  }
   return { href: '/' };
 }
 
@@ -147,6 +150,21 @@ describe('ui/RichText', () => {
             data: {
               link_type: 'Web',
               url: 'https://www.prismic.com',
+            },
+          },
+        ],
+      },
+      {
+        type: 'paragraph',
+        text: 'This block has a link with an onClick event handler.',
+        spans: [
+          {
+            start: 17,
+            end: 21,
+            type: 'hyperlink',
+            data: {
+              link_type: 'Document',
+              type: 'stub',
             },
           },
         ],
