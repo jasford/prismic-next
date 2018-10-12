@@ -1,7 +1,7 @@
 import Prismic from 'prismic-javascript';
 
 // Initialize settings object.
-const settings = { initialized: false, refresh: 10, fetchLinks: '' };
+const settings = { initialized: false, refresh: 10 };
 export function initPrismic(newSettings) {
   Object.assign(settings, newSettings);
   settings.initialized = true;
@@ -73,9 +73,20 @@ export async function getPrismic() {
  *     Prismic.Predicates.at('document.type', 'article'),
  *     Prismic.Predicates.at('document.id', '12345'),
  *   ]
+ *
+ * Add query options by supplying them in an object as the second parameter.
+ * For exmaple using fetch to limit the returned content to just the title field:
+ *   [
+ *     ['at', 'document.type', 'article'],
+ *     ['at', 'document.id', '12345'],
+ *     {
+ *       fetch: 'article.title'
+ *     }
+ *   ]
  * @param {Array[]} query - array of query arrays
+ * @param {Object} options - object of query options
  */
-const queryPrismic = async (query) => {
+const queryPrismic = async (query, options = {}) => {
   // First get the Prismic API object.
   const prismic = await getPrismic();
 
@@ -83,7 +94,7 @@ const queryPrismic = async (query) => {
   const predicates = query.map(p => Prismic.Predicates[p[0]](p[1], p[2]));
 
   // Make the request to prismic and return the data when done.
-  return prismic.query(predicates, { fetchLinks: settings.fetchLinks });
+  return prismic.query(predicates, options);
 };
 
 export default queryPrismic;
