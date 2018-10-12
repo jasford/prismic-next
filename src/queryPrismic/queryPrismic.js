@@ -73,6 +73,16 @@ export async function getPrismic() {
  *     Prismic.Predicates.at('document.type', 'article'),
  *     Prismic.Predicates.at('document.id', '12345'),
  *   ]
+ *
+ * Add query options by supplying them in an object as the second parameter.
+ * For exmaple using fetch to limit the returned content to just the title field:
+ *   [
+ *     ['at', 'document.type', 'article'],
+ *     ['at', 'document.id', '12345'],
+ *     {
+ *       fetch: 'article.title'
+ *     }
+ *   ]
  * @param {Array[]} query - array of query arrays
  * @param {Object} options - object of query options
  */
