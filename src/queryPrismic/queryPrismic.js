@@ -75,7 +75,7 @@ export async function getPrismic() {
  *   ]
  * @param {Array[]} query - array of query arrays
  */
-const queryPrismic = async (query) => {
+const queryPrismic = async (query, opts) => {
   // First get the Prismic API object.
   const prismic = await getPrismic();
 
@@ -83,7 +83,10 @@ const queryPrismic = async (query) => {
   const predicates = query.map(p => Prismic.Predicates[p[0]](p[1], p[2]));
 
   // Make the request to prismic and return the data when done.
-  return prismic.query(predicates, { fetchLinks: settings.fetchLinks });
+  return prismic.query(
+    predicates,
+    { fetchLinks: settings.fetchLinks, ...opts },
+  );
 };
 
 export default queryPrismic;
