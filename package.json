@@ -1,6 +1,6 @@
 {
   "name": "prismic-next",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Helpers for using Prismic CMS with Next.js.",
   "main": "lib/index.js",
   "author": "Jason Ford",
